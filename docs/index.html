@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kennel Studio: software for dog breeders</title>
+<meta name="description" content="Kennel Studio keeps your dogs, pedigrees, health tests, litters, puppy buyers and finances in one place on your own Windows computer.">
+<link rel="icon" href="favicon.ico">
+<style>
+  :root { --bg:#f4f6fa; --card:#fff; --ink:#121826; --muted:#5b667a; --line:#e3e7ef; --brand:#2563eb; --brand-ink:#fff; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0e1320; --card:#161d2e; --ink:#eef1f8; --muted:#9aa7bf; --line:#263049; --brand:#4c8dff; --brand-ink:#0b1220; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+  header.top { padding: 18px 0; display:flex; align-items:center; gap:12px; }
+  header.top img { width:34px; height:34px; border-radius:9px; }
+  header.top strong { font-size:18px; }
+  header.top nav { margin-left:auto; display:flex; gap:18px; font-size:15px; }
+  a { color: var(--brand); }
+  .hero { text-align:center; padding: 56px 0 40px; }
+  .hero img { width:96px; height:96px; }
+  h1 { font-size: clamp(30px, 5vw, 46px); line-height:1.1; margin: 18px 0 12px; letter-spacing:-.02em; }
+  .lead { color:var(--muted); font-size:19px; max-width:640px; margin: 0 auto 28px; }
+  .btn { display:inline-block; background:var(--brand); color:var(--brand-ink); padding:13px 26px; border-radius:12px; font-weight:700; text-decoration:none; font-size:17px; }
+  .btn:hover { filter:brightness(1.08); }
+  .small { color:var(--muted); font-size:14px; margin-top:12px; }
+  h2 { font-size:26px; margin: 56px 0 18px; letter-spacing:-.01em; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:14px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px 20px; }
+  .card h3 { margin:0 0 6px; font-size:17px; }
+  .card p { margin:0; color:var(--muted); font-size:15px; }
+  .steps { counter-reset: s; display:grid; gap:12px; padding:0; list-style:none; }
+  .steps li { counter-increment: s; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 18px 14px 58px; position:relative; }
+  .steps li::before { content: counter(s); position:absolute; left:16px; top:12px; width:28px; height:28px; border-radius:50%; background:var(--brand); color:var(--brand-ink); display:grid; place-items:center; font-weight:700; font-size:14px; }
+  footer { margin-top:64px; padding:28px 0 44px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <img src="icon.png" alt="">
+    <strong>Kennel Studio</strong>
+    <nav><a href="#features">Features</a><a href="#install">Install</a><a href="privacy.html">Privacy</a></nav>
+  </header>
+
+  <section class="hero">
+    <img src="icon.png" alt="Kennel Studio icon">
+    <h1>Everything your kennel needs, in one place.</h1>
+    <p class="lead">Pedigrees, health tests, litters, puppy buyers and finances for dog breeders. It runs on your own Windows computer, so your records stay yours.</p>
+    <a class="btn" href="https://wishinggem.github.io/kennel-studio-releases/KennelStudio.application">Install Kennel Studio</a>
+    <p class="small">Windows 10 or 11 &middot; 7-day free trial &middot; updates itself</p>
+  </section>
+
+  <section id="features">
+    <h2>What's inside</h2>
+    <div class="grid">
+      <div class="card"><h3>Dogs and pedigrees</h3><p>A record for every dog with photos, registration details and stud book numbers, and printable pedigrees.</p></div>
+      <div class="card"><h3>Breeding and COI</h3><p>Check the coefficient of inbreeding before a mating, compare possible matches and keep a stud and mating log.</p></div>
+      <div class="card"><h3>Health tests and certificates</h3><p>Hips, eyes, DNA results and more, with reminders and printable certificates.</p></div>
+      <div class="card"><h3>Litters and puppies</h3><p>From planned mating to the day each puppy goes home, with weight tracking and worming schedules.</p></div>
+      <div class="card"><h3>Whelping log</h3><p>Temperature tracking, birth times, seasons and progesterone tests in one timeline.</p></div>
+      <div class="card"><h3>Socialisation and puppy packs</h3><p>Checklists for every puppy and a pack of advice and records for new owners.</p></div>
+      <div class="card"><h3>Buyers and appointments</h3><p>A waiting list, viewings and collections, plus the dogs each client already has.</p></div>
+      <div class="card"><h3>Contracts and finance</h3><p>Contract templates, deposits and balances, and a simple ledger with a plan for each litter.</p></div>
+      <div class="card"><h3>More than one kennel</h3><p>Switch between kennel profiles without mixing up the records.</p></div>
+    </div>
+  </section>
+
+  <section id="install">
+    <h2>Install in a minute</h2>
+    <ol class="steps">
+      <li>Click <strong>Install Kennel Studio</strong> above and open the file when it downloads.</li>
+      <li>If Windows shows a blue "protected your PC" screen, choose <strong>More info</strong>, then <strong>Run anyway</strong>.</li>
+      <li>Start Kennel Studio from the Start menu. It checks for updates each time it opens.</li>
+      <li>Sign in with Google or Microsoft from the <strong>Licence and account</strong> screen when you are ready to buy a licence.</li>
+    </ol>
+  </section>
+
+  <footer>
+    <div>&copy; <span id="y"></span> Kennel Studio &middot; <a href="privacy.html">Privacy notice</a></div>
+    <div>Questions? <a href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a></div>
+  </footer>
+</div>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
